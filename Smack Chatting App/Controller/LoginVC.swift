@@ -20,5 +20,11 @@ class LoginVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-
+    @IBAction func createAccountButtonTapped(_ sender: UIButton) {
+        
+        let createAccountVC = storyboard?.instantiateViewController(withIdentifier: "CreateAccountVC") as! CreateAccountVC
+        self.present(createAccountVC, animated: true, completion: nil)
+        
+    }
+    
 }
